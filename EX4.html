@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Jogo</h1>
+  <div id="escolha"></div>
+  <div id="tentativas"></div>
+
+  <script>
+    let escolha = Number(prompt("Jogador 1: Escolha um número entre 1 e 10"));
+    let tentativas=0;
+
+    while (true) {
+      let adivinha = Number(prompt("Jogador 2: Tente descobrir qual foi o número escolhido pelo jogador 1")); tentativas++;
+
+      if (adivinha === escolha) {
+        document.getElementById("escolha").innerHTML = "Parabéns! Você acertou,  o número era " + escolha;
+        document.getElementById("tentativas").innerHTML = "Você acertou após " + tentativas + " tentativa(s)";
+        break;
+      } else {
+        document.getElementById("tentativas").innerHTML = "Número de tentativas: " + tentativas;
+      }
+    }
+  </script>
+</body>
+
+</html>

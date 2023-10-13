@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <div id="resultado"></div>
+
+    <script>
+        let tabuada = Number(prompt("Qual é a tabuada que você deseja visualizar?"));
+
+        for (let b = 0; b < 11; b++) {
+            let resultado = b * tabuada;
+           document.getElementById("resultado").innerHTML += tabuada + " x " + b + " = " + resultado + "</br>";
+            
+        }
+    </script>
+</body>
+</html>
